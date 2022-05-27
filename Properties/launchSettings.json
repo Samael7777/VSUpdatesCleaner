@@ -1,0 +1,19 @@
+{
+  "profiles": {
+    "VSUpdatesCleaner": {
+      "commandName": "Project"
+    },
+    "Move": {
+      "commandName": "Project",
+      "commandLineArgs": "-m e:\\Temp\\H\\VS\\123 e:\\Temp\\H\\VS\\123\\!moved"
+    },
+    "Scan": {
+      "commandName": "Project",
+      "commandLineArgs": "-s e:\\Temp\\H\\VS\\123"
+    },
+    "Delete": {
+      "commandName": "Project",
+      "commandLineArgs": "-d e:\\Temp\\H\\VS\\123"
+    }
+  }
+}
