@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommandExpectsFewerArguments" xml:space="preserve">
+    <value>Команда '{0}' требует более, чем {1} арумента(ов), но было введено {2}.</value>
+  </data>
+  <data name="CommandExpectsOneArgument" xml:space="preserve">
+    <value>Команда '{0}' требует один аргумент, но было введено {1}.</value>
+  </data>
+  <data name="CommandNoArgumentProvided" xml:space="preserve">
+    <value>Для команды '{0}' не введены аргументы.</value>
+  </data>
+  <data name="DirectoryDoesNotExist" xml:space="preserve">
+    <value>Директория не существует: '{0}'.</value>
+  </data>
+  <data name="OptionExpectsFewerArguments" xml:space="preserve">
+    <value>Опция '{0}' требует более, чем {1} аргумента(ов), но было введено {2}.</value>
+  </data>
+  <data name="OptionExpectsOneArgument" xml:space="preserve">
+    <value>Опция '{0}' требует один аргумент, но было введено {1}.</value>
+  </data>
+  <data name="OptionNoArgumentProvided" xml:space="preserve">
+    <value>Не введены аргументы для опции '{0}'.</value>
+  </data>
+  <data name="FileDoesNotExist" xml:space="preserve">
+    <value>Файл не существует: '{0}'.</value>
+  </data>
+  <data name="FileOrDirectoryDoesNotExist" xml:space="preserve">
+    <value>Файл или директория не существует: '{0}'.</value>
+  </data>
+  <data name="InvalidCharactersInPath" xml:space="preserve">
+    <value>Недопустимый символ в пути: '{0}'.</value>
+  </data>
+  <data name="CommandRequiredArgumentMissing" xml:space="preserve">
+    <value>Требуемый аргумент не введен '{0}'.</value>
+  </data>
+  <data name="OptionRequiredArgumentMissing" xml:space="preserve">
+    <value>Отсутствует необходимый аргумент для опции: '{0}'.</value>
+  </data>
+  <data name="RequiredCommandWasNotProvided" xml:space="preserve">
+    <value>Требуемая команда не введена.</value>
+  </data>
+  <data name="UnrecognizedArgument" xml:space="preserve">
+    <value>Аргумент '{0}' не распознан. Должен быть один из: {1}</value>
+  </data>
+  <data name="UnrecognizedCommandOrArgument" xml:space="preserve">
+    <value>Неопознанная команда или аргумент '{0}'.</value>
+  </data>
+  <data name="ResponseFileNotFound" xml:space="preserve">
+    <value>Файл ответов не найден '{0}'.</value>
+  </data>
+  <data name="ErrorReadingResponseFile" xml:space="preserve">
+    <value>Ошибка чтения файла ответов '{0}': {1}</value>
+  </data>
+  <data name="HelpOptionDescription" xml:space="preserve">
+    <value>Показать справку и руководство</value>
+  </data>
+  <data name="InvalidCharactersInFileName" xml:space="preserve">
+    <value>Недопустимый символ в имени файла: '{0}'.</value>
+  </data>
+  <data name="HelpUsageAdditionalArguments" xml:space="preserve">
+    <value>[[--] &lt;дополнительные аргументы&gt;...]]</value>
+  </data>
+  <data name="HelpUsageCommand" xml:space="preserve">
+    <value>[команда]</value>
+  </data>
+  <data name="HelpUsageOptions" xml:space="preserve">
+    <value>[опции]</value>
+  </data>
+  <data name="HelpUsageTitle" xml:space="preserve">
+    <value>Применение:</value>
+  </data>
+  <data name="HelpDescriptionTitle" xml:space="preserve">
+    <value>Описание:</value>
+  </data>
+  <data name="HelpArgumentDefaultValueLabel" xml:space="preserve">
+    <value>default</value>
+  </data>
+  <data name="HelpArgumentsTitle" xml:space="preserve">
+    <value>Аргументы:</value>
+  </data>
+  <data name="HelpOptionsRequiredLabel" xml:space="preserve">
+    <value>(ТРЕБУЕТСЯ)</value>
+  </data>
+  <data name="HelpOptionsTitle" xml:space="preserve">
+    <value>Опции:</value>
+  </data>
+  <data name="HelpAdditionalArgumentsDescription" xml:space="preserve">
+    <value>Аргументы переданы запущенному приложению.</value>
+  </data>
+  <data name="HelpAdditionalArgumentsTitle" xml:space="preserve">
+    <value>Дополнительные аргументы:</value>
+  </data>
+  <data name="HelpCommandsTitle" xml:space="preserve">
+    <value>Команды:</value>
+  </data>
+  <data name="ExceptionHandlerHeader" xml:space="preserve">
+    <value>Необработанное исключение: </value>
+  </data>
+  <data name="SuggestionsTokenNotMatched" xml:space="preserve">
+    <value>'{0}' не совпало. Вы имели в виду одно из следующего?</value>
+  </data>
+  <data name="VersionOptionCannotBeCombinedWithOtherArguments" xml:space="preserve">
+    <value>{0} опция не может сочетаться с другими аргументами.</value>
+  </data>
+  <data name="VersionOptionDescription" xml:space="preserve">
+    <value>Показать информацию о версии</value>
+  </data>
+  <data name="ArgumentConversionCannotParse" xml:space="preserve">
+    <value>Невозможно считать '{0}' так как ожидается тип '{1}'.</value>
+  </data>
+  <data name="ArgumentConversionCannotParseForCommand" xml:space="preserve">
+    <value>Невозможно считать аргумент '{0}' для команды '{1}' так как ожидается тип '{2}'.</value>
+  </data>
+  <data name="ArgumentConversionCannotParseForOption" xml:space="preserve">
+    <value>Невозможно считать аргумент '{0}' для опции '{1}' так как ожидается тип '{2}'.</value>
+  </data>
+</root>
