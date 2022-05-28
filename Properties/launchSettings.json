@@ -9,11 +9,15 @@
     },
     "Scan": {
       "commandName": "Project",
-      "commandLineArgs": "-s e:\\Temp\\H\\VS\\123"
+      "commandLineArgs": "-s e:\\Temp\\H\\VS"
     },
     "Delete": {
       "commandName": "Project",
       "commandLineArgs": "-d e:\\Temp\\H\\VS\\123"
+    },
+    "Help": {
+      "commandName": "Project",
+      "commandLineArgs": "--help"
     }
   }
 }
