@@ -11,6 +11,17 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
 
+<PropertyGroup>
+    <Configuration>Debug</Configuration>
+    <Platform>Any CPU</Platform>
+    <PublishDir>bin\Debug\net6.0-windows7.0\publish\win-x64\</PublishDir>
+    <PublishProtocol>FileSystem</PublishProtocol>
+    <SelfContained>false</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="System.Memory" Version="4.5.5" />
   </ItemGroup>
