@@ -17,7 +17,7 @@ var DstDirArg = new Argument<DirectoryInfo>(
 //Команды
 var cmdScan = new Command(
     "SCAN",
-    description: "Сканирование исходной папки на дубликаты (команда по умолчанию)");
+    description: "Сканирование исходной папки на дубликаты");
 cmdScan.AddAlias("-s");
 cmdScan.AddArgument(SrcDirArg);
 
