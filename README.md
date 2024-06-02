@@ -1,15 +1,18 @@
 ﻿# VSUpdatesCleaner
-Описание:
-  Утилита для поиска и удаления дубликатов установочных компонентов Visual Studio
 
-Применение:
-  VSUpdatesCleaner [команда] [опции]
+Description:
+  Visual Studio local packages cleaner.
 
-Опции:
-  --version       Показать информацию о версии
-  -?, -h, --help  Показать справку и руководство
+Usage:
+  VSUpdatesCleaner [command] [options]
 
-Команды:
-  DEL, -d <Source>                 Удаление дубликатов
-  MOVE, -m <Source> <Destination>  Перемещение дубликатов в указанную папку
-  SCAN, -s <Source>                Сканирование исходной папки на дубликаты (команда по умолчанию)
+Options:
+  --catalog-file <catalog-file>    Path to Catalog.json. [default: <App path>]
+  --packages-path <packages-path>  Path to downloaded packages directory. [default: <App path>]
+  --version                        Show version information
+  -?, -h, --help                   Show help and usage information
+
+Commands:
+  info           Print unused packages information (default).
+  delete         Delete unused packages.
+  move <target>  Move unused packages to target directory.
