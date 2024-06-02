@@ -1,23 +1,8 @@
 {
   "profiles": {
     "VSUpdatesCleaner": {
-      "commandName": "Project"
-    },
-    "Move": {
       "commandName": "Project",
-      "commandLineArgs": "-m e:\\Temp\\H\\VS\\123 e:\\Temp\\H\\VS\\123\\!moved"
-    },
-    "Scan": {
-      "commandName": "Project",
-      "commandLineArgs": "-s e:\\Temp\\H\\VS"
-    },
-    "Delete": {
-      "commandName": "Project",
-      "commandLineArgs": "-d e:\\Temp\\H\\VS\\123"
-    },
-    "Help": {
-      "commandName": "Project",
-      "commandLineArgs": "--help"
+      "commandLineArgs": "info --catalog-file \"e:\\Distribs\\Программирование\\Visual Studio\\Visual Studio 2022\\VS\\Catalog.json\" --packages-path \"e:\\Distribs\\Программирование\\Visual Studio\\Visual Studio 2022\\VS\" "
     }
   }
 }
