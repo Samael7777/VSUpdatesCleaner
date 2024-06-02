@@ -19,7 +19,7 @@ static class Program
         var catalogPathOption = new Option<string>("--catalog-file",
             () => Path.Combine(AppDirectory, CatalogFileName), 
             "Path to Catalog.json.");
-        catalogPathOption.AddValidator((result) =>
+        catalogPathOption.AddValidator(result =>
         {
             var value = result.GetValueForOption(catalogPathOption);
             if (string.IsNullOrWhiteSpace(value) || !File.Exists(value))
@@ -33,7 +33,7 @@ static class Program
         var packagesPathOption = new Option<string>("--packages-path", 
             ()=> AppDirectory,
             "Path to downloaded packages directory.");
-        packagesPathOption.AddValidator((result) =>
+        packagesPathOption.AddValidator(result =>
         {
             var value = result.GetValueForOption(packagesPathOption);
             if (string.IsNullOrWhiteSpace(value) || !Directory.Exists(value))
@@ -51,7 +51,7 @@ static class Program
 
         var moveCommand = new Command("move", "Move unused packages to target directory.");
         var targetDirectoryArgument = new Argument<string>("target", "Target directory for moving packages.");
-        targetDirectoryArgument.AddValidator((result) =>
+        targetDirectoryArgument.AddValidator(result =>
         {
             var targetDirectory = result.GetValueForArgument(targetDirectoryArgument);
             if (string.IsNullOrWhiteSpace(targetDirectory))
@@ -70,12 +70,12 @@ static class Program
         moveCommand.AddArgument(targetDirectoryArgument);
         rootCommand.AddCommand(moveCommand);
         
-        infoCommand.SetHandler((context) =>
+        infoCommand.SetHandler(context =>
         {
             _ = BuildCleanerModelPrintInfo(context, catalogPathOption, packagesPathOption);
         });
 
-        deleteCommand.SetHandler((context) =>
+        deleteCommand.SetHandler(context =>
         {
             var cleanerModel = BuildCleanerModelPrintInfo(context, catalogPathOption, packagesPathOption);
             if (cleanerModel is null) return;
@@ -85,7 +85,7 @@ static class Program
             Console.WriteLine($"Freed {deleted.ToFileSizeApi()}");
         });
 
-        moveCommand.SetHandler((context) =>
+        moveCommand.SetHandler(context =>
         {
             var cleanerModel = BuildCleanerModelPrintInfo(context, catalogPathOption, packagesPathOption);
             if (cleanerModel is null) return;
@@ -97,9 +97,9 @@ static class Program
             Console.WriteLine($"Moved {packagesMoved} packages.");
         });
 
-        rootCommand.Invoke(args);
+        rootCommand.SetHandler(context => infoCommand.Handler?.Invoke(context));
 
-        Console.ReadKey();
+        rootCommand.Invoke(args);
     }
 
     private static CleanerModel? BuildCleanerModelPrintInfo(InvocationContext context, Option<string>catalogPathOption, Option<string>packagesPathOption)

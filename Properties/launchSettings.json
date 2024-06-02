@@ -1,8 +1,7 @@
 {
   "profiles": {
     "VSUpdatesCleaner": {
-      "commandName": "Project",
-      "commandLineArgs": "info --catalog-file \"e:\\Distribs\\Программирование\\Visual Studio\\Visual Studio 2022\\VS\\Catalog.json\" --packages-path \"e:\\Distribs\\Программирование\\Visual Studio\\Visual Studio 2022\\VS\" "
+      "commandName": "Project"
     }
   }
 }
