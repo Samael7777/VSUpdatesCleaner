@@ -1,7 +1,8 @@
 {
   "profiles": {
     "VSUpdatesCleaner": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "\"e:\\Distribs\\Программирование\\Visual Studio\\Visual Studio 2022\\VS\""
     }
   }
 }

@@ -14,10 +14,10 @@ public class CleanerModel
     {
         _packagesDirectory = packagesDirectory;
 
-        _unusedPackages = packages.Where(dp => 
+        _unusedPackages = packages.Where(dp =>
                 !catalog.packages.Contains(dp, new PackageComparer()))
             .ToList();
-        
+
         WastedSpace = _unusedPackages.Sum(p => p.ComponentSize);
     }
     

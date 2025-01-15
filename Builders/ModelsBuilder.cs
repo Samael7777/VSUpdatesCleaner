@@ -1,5 +1,5 @@
-﻿using System.Text.Json.Serialization;
-using System.Text.Json;
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 using VSUpdatesCleaner.CatalogModel;
 
 namespace VSUpdatesCleaner.Builders;
@@ -11,9 +11,10 @@ public static class ModelsBuilder
         using var reader = new StreamReader(catalogFilePath);
         var content = reader.ReadToEnd();
 
-        var jsonOptions = new JsonSerializerOptions()
+        var jsonOptions = new JsonSerializerOptions
         {
-            Converters = { new JsonStringEnumConverter() }
+            Converters = { new JsonStringEnumConverter<PackageType>() },
+            TypeInfoResolver = CatalogJsonSerializerContext.Default
         };
 
         var catalog = JsonSerializer.Deserialize<Catalog>(content, jsonOptions);
